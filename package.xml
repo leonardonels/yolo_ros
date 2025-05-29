@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>cone_detection</name>
+  <version>0.0.1</version>
+  <description>YOLO for ROS 2</description>
+  <maintainer email="leo.nels.2000@gmail.com">Leonardo Nels</maintainer>
+  <license>GPL-3</license>
+
+  <!-- Build system -->
+  <!--
+  <buildtool_depend>ament_python</buildtool_depend>
+  -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- Runtime dependencies -->
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>vision_msgs</exec_depend>
+  <exec_depend>cv_bridge</exec_depend>
+  <exec_depend>opencv-python</exec_depend>
+  <exec_depend>numpy</exec_depend>
+  <exec_depend>pandas</exec_depend>
+  
+  <export>
+    <!--
+    <build_type>ament_python</build_type>
+    -->
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
