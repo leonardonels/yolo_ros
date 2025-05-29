@@ -29,7 +29,7 @@ class ConeDetectionNode(Node):
             return cv2.dnn.readNetFromONNX(model_path)
         else:
             from ultralytics import YOLO
-            model_path = os.path.join(model_dir, 'yolov8m.pt')
+            model_path = os.path.join(model_dir, 'best.pt')
             self.get_logger().info(f"Using PyTorch model: {model_path}")
             return YOLO(model_path)
 
