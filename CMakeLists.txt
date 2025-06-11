@@ -25,6 +25,10 @@ install(DIRECTORY cone_detection/
   DESTINATION share/${PROJECT_NAME}/cone_detection
 )
 
+install(DIRECTORY pointcloud_filter/
+  DESTINATION share/${PROJECT_NAME}/pointcloud_filter
+)
+
 install(DIRECTORY launch/
   DESTINATION share/${PROJECT_NAME}/launch
 )
