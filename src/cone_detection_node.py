@@ -19,7 +19,7 @@ class ConeDetectionNode(Node):
         # Publisher and subscriber
         self.detection_pub = self.create_publisher(Detection2DArray, '/cone_detections', 10)
         self.masked_image_pub = self.create_publisher(Image, '/cone_detection/image_with_masks', 10)
-        self.image_sub = self.create_subscription(Image, '/zed/zed_node/left_raw/image_raw_color', self.image_callback, 10)
+        self.image_sub = self.create_subscription(Image, '/zed/zed_node/rgb/image_rect_color', self.image_callback, 10)
 
     def load_yolo_model(self):
         model_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'models'))
