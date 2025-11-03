@@ -30,4 +30,3 @@ Notes
 - For best performance use the ONNX model with an accelerated runtime (ONNX
   Runtime with CUDA, TensorRT, or PyTorch on GPU).
 - Tune model path and input topics in the launch file.
-# yolo_ros
